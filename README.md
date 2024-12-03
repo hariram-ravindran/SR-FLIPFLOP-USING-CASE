@@ -40,10 +40,13 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 5. For different input combinations generate the timing diagram.
 
 **PROGRAM**
+Developed by:Hari Ram R Register Number:24005836
+
 module ex06(q,q_bar, s, r, clk, reset);
 input s, r, clk, reset;
 output reg q;
 output q_bar;
+
 always@(posedge clk) begin
 if (!reset) q<=0;
 else

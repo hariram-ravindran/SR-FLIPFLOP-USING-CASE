@@ -42,26 +42,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 **PROGRAM**
 Developed by:Hari Ram R Register Number:24005836
 
-module ex06(q,q_bar, s, r, clk, reset);
-input s, r, clk, reset;
-output reg q;
-output q_bar;
-
-always@(posedge clk) begin
-if (!reset) q<=0;
-else
-begin
-case({s,r})
-2'b00:q<=q;
-2'b01:q<=1'b0;
-2'b10:q<=1'b1;
-2'b11:q<=1'bx;
-endcase
-end
-end
-assign q_bar=~q;
-endmodule
-
+![image](https://github.com/user-attachments/assets/0ff3c85c-0af3-477a-9c49-1463b8934d4c)
 
 **RTL LOGIC FOR FLIPFLOPS**
 ![WhatsApp Image 2024-12-03 at 11 45 30_c4443c3d](https://github.com/user-attachments/assets/e69bddf1-63aa-4003-83d2-94d20f923e6e)
